@@ -8,19 +8,21 @@
   %p Building on this track record of success, we're launching our third generation program.<br/>Classes begin <em>June 2, 2014</em> in Denver, CO.
 
 #more-information.mod-moreinfo
-  %form{:method => 'post', :action => '#'}
+  %form{:method => 'post', :action => 'http://jumpstartlab.us1.list-manage2.com/subscribe/post'}
+    %input{:type => "hidden", :name => "u", :value => "8080b7a05247f0dee13a0a26f"}
+    %input{:type => "hidden", :name => "id", :value => "6c0ee96bfa"}
+
     %h2 More Information
 
     .input
-      %input#name{:type => 'text'}
-      %label{:for => 'name'} Name
-
-    .input
-      %input#email{:type => 'email'}
+      %input#email{:type => 'email', :autocapitalize => "off", :autocorrect => "off", :name => "MERGE0", :id => "MERGE0"}
       %label{:for => 'email'} Email address
 
+    %div{:style => "position: absolute; left: -5000px;"}
+      %input{:type => "text", :name => "b_8080b7a05247f0dee13a0a26f_6c0ee96bfa", :value => ""}
+
     .input.submit
-      %button.button{:type => 'submit'} Submit
+      %button.button{:type => 'submit', :value => "Subscribe"} Subscribe
 
     / %p.thanks
     /   Thank you for your interest.
