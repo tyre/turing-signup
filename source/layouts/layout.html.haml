@@ -1,0 +1,18 @@
+!!! 5
+
+%html
+  %head
+    %meta{:charset => 'utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1'}
+    %title TURING School of Software & Design
+    = javascript_include_tag 'modernizr'
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag '//use.typekit.net/rgx4ejv.js'
+    :javascript
+      try{Typekit.load();}catch(e){}
+
+  %body
+
+    = yield
+
+    = javascript_include_tag 'application'

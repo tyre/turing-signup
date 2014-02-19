@@ -1,0 +1,49 @@
+.input
+  height: 47px
+  position: relative
+  text-align: left
+
+label
+  top: 5px
+  left: 5px
+  position: absolute
+  z-index: 2
+  font-size: 10px
+  font-weight: $font-weight-bold
+  text-align: left
+  text-transform: uppercase
+  color: #999
+  +transition(color .3s)
+
+input
+  width: 100%
+  height: 47px
+  top: 0
+  left: 0
+  position: absolute
+  display: block
+  margin: 0
+  padding: 15px 5px 0
+  font-family: $font-family
+  font-size: 14px
+  font-weight: $font-weight-light
+  color: #666
+  background: #f2f2f2
+  border: solid 1px #ccc
+  -webkit-appearance: none
+  +border-radius(0)
+  +transition(border .3s)
+
+  +max-width(400px)
+    font-size: 16px
+
+  &:focus
+    outline: none
+    border-color: $blue
+
+    + label
+      color: $blue
+
+button,
+input[type="submit"]
+  cursor: pointer

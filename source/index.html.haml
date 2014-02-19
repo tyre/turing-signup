@@ -1,0 +1,50 @@
+.mod-intro
+  %h1 TURING School of Software & Design
+  %p= link_to 'More information', '#more-information', :class => 'button'
+
+.mod-about
+  %h2 Become a Professional Developer
+  %p In 2012 the Jumpstart Lab team created HungryAcademy at LivingSocial. <br/>In 2013 we co-created the gSchool Ruby program in Denver.
+  %p Building on this track record of success, we're launching our third generation program.<br/>Classes begin <em>June 2, 2014</em> in Denver, CO.
+
+#more-information.mod-moreinfo
+  %form{:method => 'post', :action => '#'}
+    %h2 More Information
+
+    .input
+      %input#name{:type => 'text'}
+      %label{:for => 'name'} Name
+
+    .input
+      %input#email{:type => 'email'}
+      %label{:for => 'email'} Email address
+
+    .input.submit
+      %button.button{:type => 'submit'} Submit
+
+    / %p.thanks
+    /   Thank you for your interest.
+
+.mod-people
+  %ul
+    %li
+      %figure.jorge= image_tag('p_jorge_gray.jpg', :alt => 'Jorge Téllez')
+      %h3 Jorge Téllez
+      %ul
+        %li= link_to 'Twitter', 'https://twitter.com/novohispano', :class => 'twitter'
+        %li= link_to 'Github', 'https://github.com/novohispano', :class => 'github'
+    %li
+      %figure.jeff= image_tag('p_jeff_gray.jpg', :alt => 'Jeff Casimir')
+      %h3 Jeff Casimir
+      %ul
+        %li= link_to 'Twitter', 'https://twitter.com/j3', :class => 'twitter'
+        %li= link_to 'Github', 'https://github.com/jcasimir', :class => 'github'
+    %li
+      %figure.katrina= image_tag('p_katrina_gray.jpg', :alt => 'Katrina Owen')
+      %h3 Katrina Owen
+      %ul
+        %li= link_to 'Twitter', 'https://twitter.com/kytrinyx', :class => 'twitter'
+        %li= link_to 'Github', 'https://github.com/kytrinyx', :class => 'github'
+
+%footer.mod-footer
+  %p © Copyright 2014 Turing School, All rights reserved
