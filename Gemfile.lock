@@ -20,8 +20,6 @@ GEM
       multi_json (~> 1.0)
       sass (>= 3.3.rc.3)
     compass-import-once (1.0.2)
-    daemons (1.1.9)
-    eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.3)
@@ -60,7 +58,11 @@ GEM
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
     multi_json (1.8.4)
+    puma (2.5.1)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-test (0.6.2)
       rack (>= 1.0)
     rb-fsevent (0.9.4)
@@ -79,10 +81,6 @@ GEM
     sprockets-sass (1.0.2)
       sprockets (~> 2.0)
       tilt (~> 1.1)
-    thin (1.6.1)
-      daemons (>= 1.0.9)
-      eventmachine (>= 1.0.0)
-      rack (>= 1.0.0)
     thor (0.18.1)
     tilt (1.4.1)
     uglifier (2.4.0)
@@ -95,5 +93,6 @@ PLATFORMS
 DEPENDENCIES
   compass (~> 1.0.0.alpha.18)
   middleman (~> 3.2.2)
+  puma
+  rack-contrib
   sass (~> 3.3.0.rc.3)
-  thin
