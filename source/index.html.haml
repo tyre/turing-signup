@@ -1,6 +1,8 @@
 .mod-intro
   %h1 TURING School of Software & Design
-  %p= link_to 'More information', '#more-information', :class => 'button'
+  %p
+    = link_to 'More information', '#more-information', class: 'button'
+    = link_to 'Apply now', 'http://apply.turing.io', class: "button"
 
 .mod-about
   %h2 Become a Professional Developer
@@ -10,21 +12,21 @@
   %p Join the mailing list below for more information as it's published.
 
 #more-information.mod-moreinfo
-  %form{:method => 'post', :action => 'http://jumpstartlab.us1.list-manage2.com/subscribe/post'}
-    %input{:type => "hidden", :name => "u", :value => "8080b7a05247f0dee13a0a26f"}
-    %input{:type => "hidden", :name => "id", :value => "6c0ee96bfa"}
+  %form{method: 'post', action: 'http://jumpstartlab.us1.list-manage2.com/subscribe/post'}
+    %input{type: "hidden", name: "u", value: "8080b7a05247f0dee13a0a26f"}
+    %input{type: "hidden", name: "id", value: "6c0ee96bfa"}
 
     %h2 Join Our Mailing List
 
     .input
-      %input{:type => 'email', :autocapitalize => "off", :autocorrect => "off", :name => "MERGE0", :id => "MERGE0"}
-      %label{:for => 'MERGE0'} Email address
+      %input{type: 'email', autocapitalize: "off", autocorrect: "off", name: "MERGE0", id: "MERGE0"}
+      %label{for: 'MERGE0'} Email address
 
-    %div{:style => "position: absolute; left: -5000px;"}
-      %input{:type => "text", :name => "b_8080b7a05247f0dee13a0a26f_6c0ee96bfa", :value => ""}
+    %div{style: "position: absolute; left: -5000px;"}
+      %input{type: "text", name: "b_8080b7a05247f0dee13a0a26f_6c0ee96bfa", value: ""}
 
     .input.submit
-      %button.button{:type => 'submit', :value => "Subscribe"} Subscribe
+      %button.button{type: 'submit', value: "Subscribe"} Subscribe
 
     / %p.thanks
     /   Thank you for your interest.
@@ -32,23 +34,23 @@
 .mod-people
   %ul
     %li
-      %figure.jorge= image_tag('p_jorge_gray.jpg', :alt => 'Jorge Téllez')
+      %figure.jorge= image_tag('p_jorge_gray.jpg', alt: 'Jorge Téllez')
       %h3 Jorge Téllez
       %ul
-        %li= link_to 'Twitter', 'https://twitter.com/novohispano', :class => 'twitter'
-        %li= link_to 'Github', 'https://github.com/novohispano', :class => 'github'
+        %li= link_to 'Twitter', 'https://twitter.com/novohispano', class: 'twitter'
+        %li= link_to 'Github', 'https://github.com/novohispano', class: 'github'
     %li
-      %figure.jeff= image_tag('p_jeff_gray.jpg', :alt => 'Jeff Casimir')
+      %figure.jeff= image_tag('p_jeff_gray.jpg', alt: 'Jeff Casimir')
       %h3 Jeff Casimir
       %ul
-        %li= link_to 'Twitter', 'https://twitter.com/j3', :class => 'twitter'
-        %li= link_to 'Github', 'https://github.com/jcasimir', :class => 'github'
+        %li= link_to 'Twitter', 'https://twitter.com/j3', class: 'twitter'
+        %li= link_to 'Github', 'https://github.com/jcasimir', class: 'github'
     %li
-      %figure.katrina= image_tag('p_katrina_gray.jpg', :alt => 'Katrina Owen')
+      %figure.katrina= image_tag('p_katrina_gray.jpg', alt: 'Katrina Owen')
       %h3 Katrina Owen
       %ul
-        %li= link_to 'Twitter', 'https://twitter.com/kytrinyx', :class => 'twitter'
-        %li= link_to 'Github', 'https://github.com/kytrinyx', :class => 'github'
+        %li= link_to 'Twitter', 'https://twitter.com/kytrinyx', class: 'twitter'
+        %li= link_to 'Github', 'https://github.com/kytrinyx', class: 'github'
 
 %footer.mod-footer
   %p © Copyright 2014 Turing School, All rights reserved
