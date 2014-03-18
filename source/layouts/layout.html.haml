@@ -12,7 +12,19 @@
     :javascript
       try{Typekit.load();}catch(e){}
 
-  %body
+  %body{:class => page_classes}
+
+    %header.mod-header
+      .layout-wrap
+        %h1= link_to 'TURING School of Software & Design', '/'
+
+        %nav
+          %ul
+            %li{:class => nav_active('difference')}= link_to 'The Difference', '/difference.html'
+            %li{:class => nav_active('team')}= link_to 'Our Team', '/team.html'
+            %li{:class => nav_active('program')}= link_to 'The Program', '/program.html'
+            %li{:class => nav_active('apply')}= link_to 'Apply Now', '/apply.html'
+            %li{:class => nav_active('contact')}= link_to 'Contact', '/contact.html'
 
     = yield
 

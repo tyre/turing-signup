@@ -48,6 +48,10 @@ begin
     end
 
     def h(str); Rack::Utils.escape_html(str); end
+
+    def nav_active(page)
+      current_page.path == "#{page}.html" ? 'active' : nil
+    end
   end
 
   # Automatic image dimensions on image_tag helper
