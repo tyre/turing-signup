@@ -1,0 +1,33 @@
+.mod-quote
+  padding: 150px 0 200px
+  font-size: 18px
+  line-height: 1.22222
+  color: #fff
+  background: #025960 image-url("bg_quote1.jpg") center center no-repeat
+  background-size: cover
+
+  &.right
+    text-align: right
+
+    blockquote
+      margin: 0 50px 0 0
+
+  blockquote
+    max-width: 450px
+    display: inline-block
+    margin: 0 0 0 110px
+
+  footer
+    font-size: 14px
+    font-weight: $font-weight-bold
+    font-style: italic
+    line-height: 1.57142
+
+  +max-width(760px)
+    padding: 100px 0
+
+    &.right
+      text-align: left
+
+    blockquote
+      margin: 0
