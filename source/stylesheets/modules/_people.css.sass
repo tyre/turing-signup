@@ -1,18 +1,28 @@
 .mod-people
-  padding-bottom: 40px
-  font-size: 0
+  padding: 55px 0 40px
+  font-size: 24px
+  font-weight: $font-weight-light
   text-align: center
 
-  +max-width(400px)
-    padding-bottom: 40px
+  h2
+    margin-bottom: 20px
+    font-size: 48px
+
+  p
+    line-height: 1.25
+
+  .button
+    margin: 40px 0 65px
 
   > ul
     max-width: 1200px
     margin: 0 auto
+    font-size: 0
 
     > li
       width: 33.33333%
       display: inline-block
+      padding-bottom: 45px
       font-size: $font-size
 
       +max-width(600px)
@@ -23,7 +33,6 @@
 
       +max-width(450px)
         width: 100%
-        margin-bottom: 35px
 
         &:last-child
           margin: 0
@@ -32,48 +41,47 @@
         .backgroundsize & img
           +opacity(0)
 
-  li li
-    display: inline-block
+    li li
+      display: inline-block
 
-    &:first-child
-      margin-right: 6px
+      &:first-child
+        margin-right: 6px
 
-  h3
-    margin-bottom: 15px
-    font-size: 28px
-    font-weight: $font-weight-light
+    h3
+      margin-bottom: 15px
+      font-size: 28px
 
-  figure
-    margin-bottom: 35px
-    background-size: 100% auto
+    figure
+      margin-bottom: 35px
+      background-size: 100% auto
 
-  img
-    width: 100%
-    display: block
-    +transition(opacity .3s)
+    img
+      width: 100%
+      display: block
+      +transition(opacity .3s)
 
-  @each $person in jorge, jeff, katrina
-    .#{$person}
-      background-image: image-url("p_#{$person}.jpg")
+    @each $person in jorge, jeff, katrina
+      .#{$person}
+        background-image: image-url("p_#{$person}.jpg")
 
-  a
-    width: 27px
-    height: 27px
-    position: relative
-    display: inline-block
-    +hide-text
+    a
+      width: 27px
+      height: 27px
+      position: relative
+      display: inline-block
+      +hide-text
 
-  @each $network in twitter, github
-    .#{$network}
-      +data-uri-bg("i_#{$network}.png")
-
-      +hocus
-        +data-uri-bg("i_#{$network}_active.png")
-
-      +retina
-        +data-uri-bg("i_#{$network}@2x.png")
-        background-size: 100%
+    @each $network in twitter, github
+      .#{$network}
+        +data-uri-bg("i_#{$network}.png")
 
         +hocus
-          +data-uri-bg("i_#{$network}@2x_active.png")
+          +data-uri-bg("i_#{$network}_active.png")
+
+        +retina
+          +data-uri-bg("i_#{$network}@2x.png")
           background-size: 100%
+
+          +hocus
+            +data-uri-bg("i_#{$network}@2x_active.png")
+            background-size: 100%
