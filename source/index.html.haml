@@ -4,7 +4,7 @@
     = link_to 'More information', '#more-information', class: 'button'
     = link_to 'Apply now', 'http://apply.turing.io', class: "button"
 
-.mod-about
+.mod-about#more-information
   %h2 Become a Professional Developer
   %p This is not a bootcamp. We're not teaching you to pass an interview. This is a seven month, full-time program for people who want to become professional developers.
   %p In 2012 the Jumpstart Lab team created HungryAcademy at LivingSocial. In 2013 we co-created the gSchool Ruby program in Denver. Now we're excited to bring you the<br/>Turing School of Software & Design.
@@ -12,7 +12,7 @@
   %p Full tuition details will be published in the next few days, but in brief the tuition is $17,500 if paid up front. Students wanting to minimize up-front cost can pay $5,000 by the first day of class, then $472/month for 36 months after the program.
   %p Join the mailing list below for more information as it's published.
 
-#more-information.mod-moreinfo
+.mod-moreinfo
   %form{method: 'post', action: 'http://jumpstartlab.us1.list-manage2.com/subscribe/post'}
     %input{type: "hidden", name: "u", value: "8080b7a05247f0dee13a0a26f"}
     %input{type: "hidden", name: "id", value: "6c0ee96bfa"}
