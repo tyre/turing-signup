@@ -1,0 +1,75 @@
+.mod-text
+  .layout-inner-wrap
+    %h2 Our Program
+
+    %h3 Admissions
+    %p Lorem ipsum dolere sit amet nonummy lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum sit amet nonummy consecuter lorem adscpecit es quid.
+
+    %h3 Structure
+    %p Lorem ipsum dolere sit amet nonummy lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum sit amet nonummy consecuter lorem adscpecit es quid.
+    %ul
+      %li This is a bullet point. Lorem ipsum dolere sit amet nonummy lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy consecuter lorem adscpecit es quid.
+      %li Another bullet point. Lorem ipsum sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy lorem adscpecit es quid.
+      %li Multi-sentence bullet points. Lorem ipsum sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy consecuter lorem adscpecit es quid.
+      %li This is a bullet point. Lorem ipsum sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum sit amet nonummy consecuter lorem adscpecit es quid.
+    %p Lorem ipsum dolere sit amet nonummy lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum sit amet nonummy consecuter lorem adscpecit es quid.
+
+    %h3 Expectations
+    %p Lorem ipsum dolere sit amet nonummy lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy lorem adscpecit es quid. Lorem ipsum dolere sit amet nonummy consecuter lorem adscpecit es quid. Lorem ipsum sit amet nonummy consecuter lorem adscpecit es quid.
+
+    %h3 Results
+    %p This may in fact be the hardest course you will ever take. What we do as developers is not trivial. At Turing, we have a proven track record in cultivating top talent. Our placement rate is 100% and includes some very esteemed employers:
+    %ul.logos
+      - ['livingsocial', 'pivotallabs', 'quickleft', 'itriage', 'turbovote', 'cardflight', 'bonobos', 'zenpayroll', 'everfi', 'tablexl', 'maui'].each do |logo|
+        %li= image_tag("logos/#{logo}.png", :alt => logo)
+
+.mod-tuition
+  .layout-inner-wrap
+    %h2 Tuition
+    %p Program tuition is $17,500. Students may elect to defer a portion of their payment until after they are employed
+
+    %ul
+      %li.one
+        %h3 Up Front Payment
+        %dl
+          %dt Deposit
+          %dd $1000
+          %dt First Day
+          %dd $16,500
+          %dt Total Paid
+          %dd.total $17,500
+      %li.two
+        %h3 Moderate Deferment
+        %dl
+          %dt Deposit
+          %dd $1000
+          %dt First Day
+          %dd $9000
+          %dt After Program Payments
+          %dd 24 months @ $375/month
+          %dt Total Paid
+          %dd.total $19,000
+      %li.three
+        %h3 Intermediate Deferment
+        %dl
+          %dt Deposit
+          %dd $1000
+          %dt First Day
+          %dd $6500
+          %dt After Program Payments
+          %dd 30 months @ $433/month
+          %dt Total Paid
+          %dd.total $20,500
+      %li.four
+        %h3 Maximum Deferment
+        %dl
+          %dt Deposit
+          %dd $1000
+          %dt First Day
+          %dd $4000
+          %dt After Program Payments
+          %dd 36 months @ $472/month
+          %dt Total Paid
+          %dd.total $22,000
+
+= partial 'get_started'
