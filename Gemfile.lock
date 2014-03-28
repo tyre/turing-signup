@@ -76,6 +76,8 @@ GEM
     rb-kqueue (0.2.2)
       ffi (>= 0.5.0)
     sass (3.3.3)
+    shotgun (0.9)
+      rack (>= 1.0)
     sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -102,3 +104,4 @@ DEPENDENCIES
   puma
   rack-contrib
   sass (~> 3.3.3)
+  shotgun
