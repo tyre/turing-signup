@@ -1,26 +1,14 @@
 .mod-quote.right{style: "background-image: url(#{image_path('bg_quote3.jpg')})"}
   .layout-wrap
     %blockquote
-      “Lorem ipsum dolere sit amet nonummy consecuter adscpecit nomen es quid. Lorem ipsum dolere sit amet nonummy consecuter adscpecit.”
-      %footer – Person Namehere
+      “After graduation I was able to join a small startup and jump right into a critical
+      role writing production code. There's no way I could have become so proficient so quickly
+      without this program.”
+      %footer – Kareem Grant
 
 .mod-contact
   %form{method: 'post', action: '#'}
     %h2 Contact
 
-    .inputs
-      .input
-        %input#name{type: 'text', autocorrect: 'off'}
-        %label{for: 'name'} Name
-
-      .input
-        %input#email{type: 'email', autocapitalize: 'off', autocorrect: 'off'}
-        %label{for: 'email'} Email address
-
-    .input.textarea
-      %textarea#comment
-      %label{for: 'comment'} Question / Comment
-
-    .input.submit
-      %button.button.gray{type: 'submit'} Submit
-      %p.thanks Thank you for your interest.
+    :markdown
+      For fastest response, email us at [contact@jumpstartlab.com](mailto:contact@jumpstartlab.com)
